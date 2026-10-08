@@ -1,0 +1,405 @@
+css
+/* ==============================
+   GENERAL
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #eef5ff;
+    color: #24324a;
+    line-height: 1.6;
+}
+
+
+/* ==============================
+   HEADER
+================================= */
+
+.site-header {
+    background: linear-gradient(135deg, #1769aa, #4da3ff);
+    color: white;
+    padding: 45px 20px;
+    text-align: center;
+}
+
+.header-content {
+    max-width: 900px;
+    margin: auto;
+}
+
+.main-title {
+    margin: 0 0 8px;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.header-text {
+    margin: 0;
+    font-size: 17px;
+}
+
+
+/* ==============================
+   NAVIGATION
+================================= */
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+    background: white;
+    border-bottom: 1px solid #d7e5f7;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #1769aa;
+    font-weight: 600;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.navigation a:hover {
+    background: #1769aa;
+    color: white;
+}
+
+
+/* ==============================
+   MAIN CONTAINER
+================================= */
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+
+/* ==============================
+   SECTION
+================================= */
+
+.content-section {
+    margin-bottom: 45px;
+}
+
+.section-title {
+    color: #1769aa;
+    font-size: 27px;
+    margin-bottom: 18px;
+    border-left: 6px solid #4da3ff;
+    padding-left: 12px;
+}
+
+
+/* ==============================
+   POSITION EXAMPLE
+================================= */
+
+.title-area {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    background: #1769aa;
+    color: white;
+
+    padding: 5px 14px;
+    border-radius: 20px;
+
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+/* ==============================
+   CARDS
+================================= */
+
+.info-card,
+.form-card {
+    background: white;
+    padding: 28px;
+    border: 1px solid #d9e7f7;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 18px rgba(23, 105, 170, 0.08);
+}
+
+.info-card p {
+    margin-top: 0;
+}
+
+
+/* ==============================
+   CONTACT
+================================= */
+
+.contact-box {
+    background: #f1f7ff;
+    border-left: 5px solid #1769aa;
+    padding: 15px 20px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.contact-box p {
+    margin: 6px 0;
+}
+
+
+/* ==============================
+   INTERESTS
+================================= */
+
+.section-description {
+    color: #607086;
+    margin-bottom: 20px !important;
+}
+
+.interest-list {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.interest-list li {
+    background: #f5f9ff;
+    margin-bottom: 12px;
+    padding: 13px 16px;
+    border: 1px solid #dceafa;
+    border-radius: 10px;
+}
+
+.interest-list li strong {
+    display: block;
+    color: #1769aa;
+    margin-bottom: 3px;
+}
+
+.interest-list li span {
+    color: #65748b;
+    font-size: 14px;
+}
+
+
+/* ==============================
+   TABLE
+================================= */
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+.grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.grades-table th,
+.grades-table td {
+    padding: 13px;
+    border: 1px solid #cddff2;
+    text-align: center;
+}
+
+.grades-table th {
+    background: #1769aa;
+    color: white;
+}
+
+.grades-table tbody tr:nth-child(even) {
+    background: #f4f8fd;
+}
+
+.grades-table tbody tr:hover {
+    background: #eaf4ff;
+}
+
+.grade {
+    font-weight: 700;
+    color: #1769aa;
+}
+
+.average-box {
+    margin-top: 18px;
+    padding: 14px;
+    border-radius: 10px;
+    background: #eaf4ff;
+    border: 1px solid #bcd8f3;
+    text-align: center;
+    color: #1769aa;
+}
+
+
+/* ==============================
+   FORM
+================================= */
+
+.form-group {
+    margin-bottom: 22px;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 7px;
+    color: #1769aa;
+    font-weight: 600;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 14px;
+
+    border: 1px solid #bdd1e7;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    background: #fbfdff;
+
+    outline: none;
+    transition: 0.3s;
+}
+
+.form-input:focus {
+    border-color: #1769aa;
+    box-shadow: 0 0 0 3px rgba(23, 105, 170, 0.12);
+}
+
+.textarea {
+    resize: vertical;
+}
+
+
+/* ==============================
+   RADIO & CHECKBOX
+================================= */
+
+.radio-group,
+.checkbox-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 10px 0;
+}
+
+.radio-group label,
+.checkbox-group label {
+    cursor: pointer;
+}
+
+
+/* ==============================
+   BUTTONS
+================================= */
+
+.button-group {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit {
+    background: #1769aa;
+    color: white;
+}
+
+.btn-submit:hover {
+    background: #0d4f82;
+}
+
+.btn-reset {
+    background: #e7eef7;
+    color: #34495e;
+}
+
+.btn-reset:hover {
+    background: #d3dfec;
+}
+
+
+/* ==============================
+   FOOTER
+================================= */
+
+.site-footer {
+    text-align: center;
+    padding: 25px;
+    background: #1769aa;
+    color: white;
+    margin-top: 50px;
+}
+
+
+/* ==============================
+   RESPONSIVE
+================================= */
+
+@media (max-width: 600px) {
+
+    .main-title {
+        font-size: 28px;
+    }
+
+    .container {
+        width: 94%;
+    }
+
+    .info-card,
+    .form-card {
+        padding: 20px;
+    }
+
+    .badge {
+        position: static;
+        display: inline-block;
+        margin-bottom: 10px;
+    }
+
+    .button-group {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .radio-group,
+    .checkbox-group {
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
